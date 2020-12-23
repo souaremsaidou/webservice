@@ -1,7 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/souaremsaidou/webservice/pkg"
+)
 
 func main() {
-	fmt.Println("Hello")
+
+	c := pkg.NewC()
+	// fmt.Println(c)
+	fmt.Println(c.MethodName())
 }
